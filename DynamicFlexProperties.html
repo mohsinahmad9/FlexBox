@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+    }
+	section {
+		background-color:#555;
+		padding:20px;
+	}
+	
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: cneter;
+      background-color: #666;
+    }
+	fieldset legend {
+		color:fff;
+	}
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Flexbox Navigation</h1>
+  </header>
+<section>
+	<fieldset>
+		<legend>justify-content</legend>
+		<button onclick="btn_flex(0)">flex-start</button>
+		<button onclick="btn_flex(1)">flex-end</button>
+		<button onclick="btn_flex(2)">center</button>
+		<button onclick="btn_flex(3)">space-between</button>
+		<button onclick="btn_flex(4)">space-around</button>
+		<button onclick="btn_flex(5)">space-evenly</button>
+	</fieldset>
+</section>
+
+<nav>
+	<a href="#">Home</a>
+	<a href="#">About</a>
+	<a href="#">Gallery</a>
+	<a href="#">Services</a>
+	<a href="#">Contact</a>
+</nav>
+<p>
+
+</p>
+
+<script>
+let justify = [ 'flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly'];
+const nav = document.querySelector("nav");
+function btn_flex(arg)
+{
+	nav.style.justifyContent = justify[arg];
+}
+</script>
+</body>
+</html>

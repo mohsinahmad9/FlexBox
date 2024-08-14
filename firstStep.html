@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {width:960px; padding:20px; background-color: skyblue; 
+            display: flex;
+           flex-flow: row wrap;
+        }
+        .child-1 {width:100px; padding: 20px; background-color: blue; margin: 10px;}
+        
+        .container-1 {width:960px; padding:20px; background-color: skyblue; 
+            display: flex;
+            justify-content: right;
+           
+        }
+        .container-2 {width:960px; padding:20px; background-color: rgba(42, 163, 206, 0.904); 
+            display: flex;
+            
+           align-items:last  baseline;
+        }
+        .container-3 {width:960px; padding:20px; background-color: rgba(42, 163, 206, 0.904); 
+            display: flex;
+            
+            align-content: flex-end;
+        }
+        .childOne {width:100px; padding: 20px; background-color: blue; margin: 10px;}
+    </style>
+</head>
+<body>
+    <p>flex-direction : row | row-reverse | coloumn | column-reverse</p>
+    <p>flex-wrap : no-wrap | wrap | wrap-reverse </p>
+    <p>flex-flow is shortand property of (flex-direction and flex-wrap) default value
+
+        flex-flow:row nowrap;
+    </p>
+    <div class="container">
+        <div class="child-1">1</div>
+        <div class="child-1">2</div>
+        <div class="child-1">3</div>
+        <div class="child-1">4</div>
+        <div class="child-1">5</div>
+        <div class="child-1">6</div>
+        <div class="child-1">7</div>
+        <div class="child-1">8</div>
+        <div class="child-1">9</div>
+    </div>
+    <p>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</p>
+    <div class="container-1">
+        <div class="child-1">1</div>
+        <div class="child-1">2</div>
+        <div class="child-1">3</div>
+       
+    </div>
+    <p>align-items: </p>
+    <div class="container-2">
+        <div class="child-1">1 an js kjs lns kad lnd j slkns hdsnjsd j</div>
+        <div class="child-1">1 an js kjs lns jdshc kjdk </div>
+        <div class="child-1">3</div>
+       
+    </div>
+    <p>align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline</p>
+    <div class="container-3">
+        <div class="childOne">na haathi na ghoda hai waha paidal hi jana hai</div>
+        <div class="childOne">na ghoda hai waha paidal hi jana hai</div>
+        <div class="childOne">na ghoda hai waha paidal hi jana hai</div>
+    </div>
+</body>
+</html>

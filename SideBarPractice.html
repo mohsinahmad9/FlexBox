@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        .container {
+            display: flex;
+            height: 100vh;
+            align-content: stretch;
+        }
+        .sidebar {
+            background-color: rgb(9, 127, 160);
+            padding: 10px;
+            width:20px;
+            transition: width .2s;
+        }
+        .sidebar:hover {width:200px}
+        .sidebar:hover .item{display:block;}
+        .item {
+            background-color: brown;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            color: #fff;
+            font-size:22px ;
+            display:none;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Service</div>
+            <div class="item">Gallary</div>
+            <div class="item">Contact</div>
+        </div>
+    </div>
+</body>
+</html>
